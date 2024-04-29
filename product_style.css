@@ -1,0 +1,110 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:rgb(255, 255, 255);
+}
+
+header
+{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 60%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo
+{
+    position: relative;
+    max-width: 250px;
+}
+header ul
+{
+    position: relative;
+    display: flex;
+}
+header ul li
+{
+    list-style: none;
+}
+header ul li a
+{
+    display: inline-block;
+    color: #333;
+    font-weight: 400;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+
+#layout
+{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.layout-item
+{
+    background-color: white;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    width: 230px;
+    height: 490px;
+    list-style: none;
+}
+.layout-item:hover
+{
+    transform: scale(1.1);
+    border-radius: 20px
+}
+#p-name
+{
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+#p-price
+{
+    font-weight: 400;
+    font-size: 15px;
+    margin-top: 0;
+    text-align: center;
+}
+
+/* Responsive CSS */
+@media only screen and (max-width: 768px) {
+    header {
+        width: 100%;
+        padding: 20px;
+    }
+
+    header ul {
+        justify-content: center;
+    }
+
+    header ul li a {
+        margin: 0 20px;
+    }
+
+    #layout {
+        justify-content: center;
+    }
+
+    .layout-item {
+        width: 100%;
+        margin-bottom: 20px; /* Add margin between items */
+    }
+}
+
+header ul li a:hover {
+    color: #02824d;
+  transform: scale(1.5);
+}

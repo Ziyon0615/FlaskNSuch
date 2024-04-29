@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask N Such</title>
+        <link rel="stylesheet" href="style.css">
+           
+    </head>
+    <body>
+        <section>
+            <div class="circle"></div>
+            <header>
+                <a href="Home.html"><img src="logo2.png"  class="logo"></a>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <li><a href="product.html">Product</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="contactus.html">Contact Us</a></li>  
+                 
+                                 
+                </ul>
+            </header>
+            <div class="content">
+                <div class="textBox">
+                    <h2>Your Perfect Companion for Hydration <br> <span>On-The-Go!</span></h2>
+                    <p> Join the Flask N Such community and make hydration a breeze. Order your TumbleEase tumbler now and experience the perfect blend of style and functionality.</p>
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeM03DGY3SOha2-zQ9UI91_lpOQQYcTDoHCyIQt3Py3lcYGiw/viewform">activities</a>
+                    <br><br>
+                    <img src="QRcode.jpg" width="150px", height="150px">
+                </div>     
+                <div class="imgBox">
+                    <img src="biggreen.png" class="tumbler">
+                </div>
+            </div>
+            <ul class="thumb">
+                <li><img src="smallblack.png" onclick="imgSlider('bigblack.png'); changeColor('#000000')"></li>
+                <li><img src="smallgreen.png" onclick="imgSlider('biggreen.png'); changeColor('#017143')"></li>
+                <li><img src="smallpink.png" onclick="imgSlider('bigpink.png'); changeColor('#d752b1')"></li>
+            </ul>
+            <ul class="social">
+                <li><a href="https://www.facebook.com/profile.php?id=61557971741212&mibextid=ZbWKwL"><img src="facebook.png"></a></li>
+              
+                <li><a href="https://www.instagram.com/flasknsuchindustries/?igsh=MWZpYXd2NjNtMHRieA%3D%3D&fbclid=IwAR3oIJXscTF0GoqkLje_sx4NN85lcM6WMGTT8CSNB0LQoJBcEILk2zJl9Ts"><img src="instagram.png"></a></li>
+            </ul>
+        </section>
+
+       
+
+        <script type="text/javascript">
+            function imgSlider (anything){
+                document.querySelector('.tumbler').src = anything;
+            }
+            function changeColor(color){
+                const circle = document.querySelector('.circle');
+                circle.style.background = color;
+            }
+            </script>
+                </body>
+</html>
